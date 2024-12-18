@@ -1,0 +1,138 @@
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.prod.website-files.com/64d1a97b791d8ca9bb004633/66dfdb0e0aa83651290df58f_CLASS7.webp"); /* Galaxy Theme image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Centering the container */
+#LoginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Create a flex container to arrange items in two columns */
+.container {
+  display: flex;
+  justify-content: center; /* Center both left and right containers */
+  align-items: center; /* Vertically center the containers */
+  width: 100%;
+  max-width: 1200px; /* Limit the width for larger screens */
+  height: auto;
+  background-color: transparent; /* Transparent to show the background image */
+}
+
+/* Left container for the image */
+#left-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px; /* Add some padding for better spacing */
+}
+
+/* Styling for the image in the left container */
+#left-container img {
+  width: max-content; /* Adjust width to fit the container */
+  height: 818px;
+  border: 1px solid white; /* Border with 10px thickness */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* White glow shadow */
+}
+
+/* Styling for the right container (form and text) */
+#right-container {
+  flex: 1;
+  background-color: #0c0c0c;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  height: auto;
+  max-height: 80%; /* Limit the height of the right container */
+  overflow-y: auto; /* Allow scrolling if the content exceeds the max height */
+}
+
+/* Styling for the title at the top */
+h1 {
+  font-size: 36px; /* Slightly smaller title */
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+/* Styling for the form */
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px; /* Add space below the title */
+}
+
+/* Styling for form fields */
+.form-group {
+  margin: 8px 0; /* Reduced margin */
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: white;
+}
+
+/* Submit button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Styling for the bottom text */
+#bottomText {
+  font-size: 14px;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
